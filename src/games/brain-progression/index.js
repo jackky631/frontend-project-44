@@ -3,11 +3,12 @@ import { pattern } from '../../index.js';
 
 
 const descriptionTask = 'What number is missing in the progression?';
+
 const getProgressionArray = (start, step) => {
 	let count = 0;
-	if (step = 3) {
+	if (step === 3) {
 		count = getRandomInt(15, 30);
-	} else if (step = 2) {
+	} else if (step === 2) {
 		count = getRandomInt(10, 20);
 	}
 	const array = [];
@@ -17,6 +18,7 @@ const getProgressionArray = (start, step) => {
 	}
 	return array;
 }
+
 const getQuestionionAndAnswer = () => {
 	const randomInt = getRandomInt(0, 100);
 	let step = 0;
