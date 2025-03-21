@@ -25,25 +25,3 @@ const getExpressionAndAnswer = () => {
 export default () => {
 	pattern(descriptionTask, getExpressionAndAnswer);
 }
-
-
-
-// const arrSymblos = ['+', '-', '*']
-// export const brainCalc = () => {
-// 	for (let i = 0; i < 3; i = i + 1) {
-// 		const taskCondition = 'What is the result of the expression?'//(описание задания);
-// 		let randomIntOne = getRandomInt(0, 100);
-// 		let randomIntTwo = getRandomInt(0, 100);
-// 		let randomIndex = Math.floor(Math.random() * arrSymblos.length);
-// 		let randomSymbol = arrSymblos[randomIndex];
-// 		let expression = `${randomIntOne} ${randomSymbol} ${randomIntTwo}`;
-// 		let currentAnswer = 0;
-// 		if (randomSymbol === '+') {
-// 			currentAnswer = randomIntOne + randomIntTwo;
-// 		} else if (randomSymbol === '-') {
-// 			currentAnswer = randomIntOne - randomIntTwo;
-// 		} else if (randomSymbol === '*') {
-// 			currentAnswer = randomIntOne * randomIntTwo;
-// 		}
-// 	}
-// }
