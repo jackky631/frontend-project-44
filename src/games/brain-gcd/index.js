@@ -19,16 +19,14 @@ const getGCD = (x, y) => {
 		return y;
 	}
 }
-
-
-const getExpressionAndAnswer = () => {
+const getQuestionionAndAnswer = () => {
 	const randomIntOne = getRandomInt(0, 100);
 	const randomIntTwo = getRandomInt(0, 100);
-	const expression = `${randomIntOne} ${randomIntTwo}`;
+	const question = `${randomIntOne} ${randomIntTwo}`;
 	const currentAnswer = getGCD(randomIntOne, randomIntTwo);
-	return [expression, String(currentAnswer)];
+	return [question, String(currentAnswer)];
 }
 
 export default () => {
-	pattern(descriptionTask, getExpressionAndAnswer);
+	pattern(descriptionTask, getQuestionionAndAnswer);
 }

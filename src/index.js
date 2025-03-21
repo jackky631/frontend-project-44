@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
-export const pattern = (descriptionTask, getExpressionAndAnswer) => {
+export const pattern = (descriptionTask, getQuestionionAndAnswer) => {
 	console.log('Welcome to the Brain Games!');
 	const name = readlineSync.question('May I have your name? ');
 	console.log(`Hello, ${name}`);
 	console.log(descriptionTask);
 	for (let i = 0; i < 3; i += 1) {
-		const [expression, currentAnswer] = getExpressionAndAnswer();
-		console.log(`Question: ${expression}`);
+		const [question, currentAnswer] = getQuestionionAndAnswer();
+		console.log(`Question: ${question}`);
 		const userAnswer = readlineSync.question('Your answer: ');
 		if (userAnswer === currentAnswer) {
 			console.log('Correct!');

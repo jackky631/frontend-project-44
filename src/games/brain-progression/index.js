@@ -3,8 +3,21 @@ import { pattern } from '../../index.js';
 
 
 const descriptionTask = 'What number is missing in the progression?';
-
-const getExpressionAndAnswer = () => {
+const getProgressionArray = (start, step) => {
+	let count = 0;
+	if (step = 3) {
+		count = getRandomInt(15, 30);
+	} else if (step = 2) {
+		count = getRandomInt(10, 20);
+	}
+	const array = [];
+	const end = start + count;
+	for (let i = start; i <= end; i += step) {
+		array.push(i);
+	}
+	return array;
+}
+const getQuestionionAndAnswer = () => {
 	const randomInt = getRandomInt(0, 100);
 	let step = 0;
 	if (randomInt % 2 === 0) {
@@ -12,23 +25,14 @@ const getExpressionAndAnswer = () => {
 	} else if (randomInt % 2 !== 0) {
 		step = 2;
 	}
-	const getArray = (start, step) => {
-		const count = getRandomInt(10, 20);
-		const array = [];
-		const end = start + count;
-		for (let i = start; i <= end; i += step) {
-			array.push(i);
-		}
-		return array;
-	}
-	let arr = getArray(randomInt, step);
+	let arr = getProgressionArray(randomInt, step);
 	const randomIndex = getRandomInt(0, arr.length);
 	const rem = arr.splice(randomIndex, 1, "...");
-	const expression = arr;
+	const question = arr;
 	const currentAnswer = rem;
-	return [expression, String(currentAnswer)];
+	return [question, String(currentAnswer)];
 }
 
 export default () => {
-	pattern(descriptionTask, getExpressionAndAnswer);
+	pattern(descriptionTask, getQuestionionAndAnswer);
 }

@@ -9,12 +9,12 @@ const isPrime = (number) => {
 	}
 	return number !== 1;
 }
-const getExpressionAndAnswer = () => {
-	const expression = getRandomInt(0, 100);
-	const currentAnswer = isPrime(expression) ? 'yes' : 'no';
-	return [expression, currentAnswer];
+const getQuestionionAndAnswer = () => {
+	const question = getRandomInt(0, 100);
+	const currentAnswer = isPrime(question) ? 'yes' : 'no';
+	return [question, currentAnswer];
 }
 
 export default () => {
-	pattern(descriptionTask, getExpressionAndAnswer);
+	pattern(descriptionTask, getQuestionionAndAnswer);
 }
