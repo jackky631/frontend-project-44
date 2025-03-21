@@ -15,6 +15,6 @@ export const pattern = (descriptionTask, getQuestionionAndAnswer) => {
 			return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${currentAnswer}'.\nLet's try again, ${name}!`);
 		}
 	}
-	return console.log(`Congratulations, ${name}`);
+	return console.log(`Congratulations, ${name}!`);
 
 }
