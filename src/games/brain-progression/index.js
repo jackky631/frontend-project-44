@@ -27,7 +27,7 @@ const getQuestionionAndAnswer = () => {
 	}
 	let arr = getProgressionArray(randomInt, step);
 	const randomIndex = getRandomInt(0, arr.length);
-	const rem = arr.splice(randomIndex, 1, "...");
+	const rem = arr.splice(randomIndex, 1, "..");
 	const question = arr;
 	const currentAnswer = rem;
 	return [question, String(currentAnswer)];
