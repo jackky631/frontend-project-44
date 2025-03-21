@@ -5,5 +5,7 @@
 <a href="https://asciinema.org/a/Wt2zszUt0a9gSokKzKtqkykEo">DEMO BRAIN EVEN</a></br>
 <a href="https://asciinema.org/a/Aeu4cDOrdkKFN3HGmrUzvjdAi">DEMO BRAIN CALC</a></br>
 <a href="https://asciinema.org/a/w0WDx6qSTl5BH9lcTuyPX2kOd">DEMO BRAIN GCD</a></br>
-<a href="https://asciinema.org/a/eZzlpKmUXgXOlUlCfkuIDJOW6">DEMO BRAIN PROGRESSION</a>
+<a href="https://asciinema.org/a/eZzlpKmUXgXOlUlCfkuIDJOW6">DEMO BRAIN PROGRESSION</a></br>
+<a href="https://asciinema.org/a/2V7vPTyC7xui7DCXkX4BrIXQv">DEMO BRAIN PRIME</a>
+
 
